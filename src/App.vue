@@ -3,11 +3,24 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
+
     </div>
+    <Aumentar/>
     <router-view/>
   </div>
 </template>
 
+
+<script>
+import Aumentar from "./components/Aumentar.vue";
+export default {
+  name: 'app',
+  component: {
+    Aumentar
+  }
+}
+
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
