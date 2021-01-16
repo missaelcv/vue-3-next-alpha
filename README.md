@@ -1,19 +1,24 @@
-# app-vue-next
 
-## Project setup
-```
-npm install
-```
+# vue-cli-plugin-vue-next
+## A Vue CLI plugin for trying out the Vue 3 beta.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+This is for preview purposes only. There might be bugs and undocumented behavior differences from v2, which are expected.
 
-### Compiles and minifies for production
+Also note that if you are using VSCode, Vetur isn't updated to take advantage of Vue 3's typing yet so intellisense in Vue files may not be fully functional (especially in templates).
+
+## Usage
 ```
-npm run build
+vue add vue-next
 ```
+##  in an existing Vue CLI project
+vue add vue-next
+What's implemented?
+ Add Vue 3 beta and @vue/compiler-sfc to the project dependencies.
+ Configure webpack to compile .vue files with the new Vue 3 compiler.
+ Codemods that automatically migrate some global API changes mentioned in RFC-0009.
+ Install Vuex 4.0 & Vue Router 4.0 in the project, if older versions of them are detected.
+ Codemods for the API changes in Vuex and Vue Router.
+
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
